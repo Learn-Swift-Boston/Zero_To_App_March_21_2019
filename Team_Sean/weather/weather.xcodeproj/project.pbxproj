@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1826E13E2250099F00E3D732 /* Currently.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826E13D2250099F00E3D732 /* Currently.swift */; };
+		1826E14322500A0400E3D732 /* EndpointRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826E14222500A0400E3D732 /* EndpointRouter.swift */; };
+		1826E14522500B1A00E3D732 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826E14422500B1A00E3D732 /* Networking.swift */; };
+		1826E14822500D3C00E3D732 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826E14722500D3C00E3D732 /* Constants.swift */; };
+		1826E14A22500E0B00E3D732 /* HTTPResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826E14922500E0B00E3D732 /* HTTPResponseValidator.swift */; };
+		1826E14C2250123100E3D732 /* DarkSkyRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1826E14B2250123100E3D732 /* DarkSkyRouter.swift */; };
 		358509192244556400C46113 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358509182244556400C46113 /* AppDelegate.swift */; };
 		3585091B2244556400C46113 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3585091A2244556400C46113 /* ViewController.swift */; };
 		3585091E2244556400C46113 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3585091C2244556400C46113 /* Main.storyboard */; };
@@ -15,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1826E13D2250099F00E3D732 /* Currently.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currently.swift; sourceTree = "<group>"; };
+		1826E14222500A0400E3D732 /* EndpointRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointRouter.swift; sourceTree = "<group>"; };
+		1826E14422500B1A00E3D732 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		1826E14722500D3C00E3D732 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1826E14922500E0B00E3D732 /* HTTPResponseValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseValidator.swift; sourceTree = "<group>"; };
+		1826E14B2250123100E3D732 /* DarkSkyRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyRouter.swift; sourceTree = "<group>"; };
 		358509152244556400C46113 /* weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		358509182244556400C46113 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3585091A2244556400C46113 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +47,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1826E1392250095600E3D732 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1826E13D2250099F00E3D732 /* Currently.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1826E13A2250096400E3D732 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				358509212244556500C46113 /* LaunchScreen.storyboard */,
+				3585091C2244556400C46113 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1826E13B2250096A00E3D732 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3585091A2244556400C46113 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1826E13C2250097200E3D732 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1826E14222500A0400E3D732 /* EndpointRouter.swift */,
+				1826E14422500B1A00E3D732 /* Networking.swift */,
+				1826E14922500E0B00E3D732 /* HTTPResponseValidator.swift */,
+				1826E14B2250123100E3D732 /* DarkSkyRouter.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1826E13F225009AC00E3D732 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				1826E14722500D3C00E3D732 /* Constants.swift */,
+				358509182244556400C46113 /* AppDelegate.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		3585090C2244556400C46113 = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +111,12 @@
 		358509172244556400C46113 /* weather */ = {
 			isa = PBXGroup;
 			children = (
-				358509182244556400C46113 /* AppDelegate.swift */,
-				3585091A2244556400C46113 /* ViewController.swift */,
-				3585091C2244556400C46113 /* Main.storyboard */,
+				1826E13C2250097200E3D732 /* Network */,
+				1826E13B2250096A00E3D732 /* Controller */,
+				1826E13A2250096400E3D732 /* View */,
+				1826E1392250095600E3D732 /* Model */,
+				1826E13F225009AC00E3D732 /* Utility */,
 				3585091F2244556500C46113 /* Assets.xcassets */,
-				358509212244556500C46113 /* LaunchScreen.storyboard */,
 				358509242244556500C46113 /* Info.plist */,
 			);
 			path = weather;
@@ -135,8 +193,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1826E14C2250123100E3D732 /* DarkSkyRouter.swift in Sources */,
 				3585091B2244556400C46113 /* ViewController.swift in Sources */,
+				1826E14522500B1A00E3D732 /* Networking.swift in Sources */,
 				358509192244556400C46113 /* AppDelegate.swift in Sources */,
+				1826E13E2250099F00E3D732 /* Currently.swift in Sources */,
+				1826E14322500A0400E3D732 /* EndpointRouter.swift in Sources */,
+				1826E14822500D3C00E3D732 /* Constants.swift in Sources */,
+				1826E14A22500E0B00E3D732 /* HTTPResponseValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
